@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "titulo":"Jugo Rinde 2",
+        "precio": 30,
+        "miniatura" : "https://ardiaprod.vteximg.com.br/arquivos/ids/185792-1000-1000/Jugo-en-polvo-Rinde-2-Anana-18-Gr-_1.jpg?v=637427572923900000"
+    },
+    {
+        "id":2,
+        "titulo":"Pionono Dia",
+        "precio": 100,
+        "miniatura" : "https://ardiaprod.vteximg.com.br/arquivos/ids/214405-1000-1000/Pionono-Dia-150-Gr-_1.jpg?v=637713682444670000" 
+    },
+    {
+        "id":3,
+        "titulo":"Pepsi MAX",
+        "precio": 70,
+        "miniatura" : "https://cdn.pixabay.com/photo/2020/06/13/20/25/soda-5295697__480.png" 
+    },
+    {
+        "id":4,
+        "titulo":"Mouse noganet",
+        "precio": 500,
+        "miniatura" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjlQVLNpZIthhb3R71DNWe8ErrM0naZxxBPA&usqp=CAU" 
+    }
+
+]
