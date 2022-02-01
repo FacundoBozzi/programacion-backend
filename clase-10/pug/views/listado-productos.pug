@@ -1,0 +1,34 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Listado de productos
+include ./partials/navegacion.pug
+.container.mt-5
+  h1 Vista de productos
+  if (productos.length > 0)
+    table.table.table-dark.table-striped
+        thead
+        tr
+            th(scope='col') Nombre
+            th(scope='col') Precio
+            th(scope='col') Foto
+        tbody
+            each producto in productos
+                tr
+                  th= producto.nombre 
+                  th= producto.precio
+                  th
+                    img(src=producto.fotoURL style='width: 50px;')
+  else
+    .alert.alert-warning(role='alert')
+      | ¡Aún no se cargó ningún producto!
+style.
+  img {
+  width: 50px;
+  }
+  th, td {
+  text-align: center;
+  vertical-align: middle;
+  }

@@ -1,0 +1,22 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Cargar productos
+include ./partials/navegacion.pug
+.container.pt-5
+  h1 Formulario de carga de productos
+  .row
+    .col-12.col-md-6
+      form(action='/cargar-productos' method='POST')
+        .mb-3
+          label.form-label Nombre del producto
+          input.form-control(required='' type='text' name='nombreProducto' placeholder='Introduce el nombre del producto')
+        .mb-3
+          label.form-label Precio del producto
+          input.form-control(required='' type='number' name='precioProducto' placeholder='Introduce el precio del producto')
+        .mb-3
+          label.form-label URL de la foto
+          input#a.form-control(required='' type='url' name='imageProducto' placeholder='Introduce el link de la foto del producto')
+        button.form-control.btn-success(type='submit') Cargar producto
